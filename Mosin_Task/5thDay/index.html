@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Move Image on Hover</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      margin-top: 50px;
+      justify-content: center;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img1 {
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box" id="box1">
+      <img src="s.jpg" class="img1" id="myImage">
+    </div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+  </div>
+<!-- For each box, we add a mouseenter event.
+mouseenter triggers when your mouse enters the box (hover). --> 
+  <script>
+    const img = document.getElementById('myImage');
+    const boxes = document.querySelectorAll('.box');
+
+    boxes.forEach(box => {
+        // mouseenter or click click ni box var click kel ki imge tith jate
+      box.addEventListener('mouseenter', () => {
+        box.appendChild(img);
+      });
+    });
+  </script>
+
+</body>
+</html>

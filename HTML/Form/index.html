@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body style="background-color: pink; padding: 150px;">
+
+        <h1>Student Registration </h1>
+        <form>
+            <label for>User Name : </label>
+            <input type="text" placeholder="Enter the User Name"> <br><br>
+            <label for>Email : </label>
+            <input type="email" > <br><br>
+            <label for="phone">Enter your phone number:
+            </label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required /><br><br>
+            <label for>Password : </label>
+            <input type="password" placeholder="Enter password"> <br><br>
+            <label for="counter">Experience of working : </label>
+            <input type="number" name="counter" id="counter" min="0" max="50"><br><br>
+
+            <!-- one option can be select use in input type (name) -->
+            <label>Gender:</label> <br><br>
+            <label for="male" id="male">Male</label>
+            <input type="radio" id="male" value="male" name="gender">
+
+            <label for="Female" id="Female">Female</label>
+            <input type="radio" id="Female" value="Female"
+                name="gender"><br><br>
+
+            Enter the date and time : <input type="datetime-local"
+                name="date" id="date"> <br> <br>
+
+            <label for>Select subject :</label>
+
+            <select name="dp" id="dp">
+                <option value>Java</option>
+                <option value>python</option>
+                <option value>react js</option>
+                <option value>MERN stack</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Skill</legend>
+                <label for="Checkbox1">MERN</label>
+                <input type="checkbox" name="checkbox" id="checkbox1">
+                <label for="Checkbox">Java</label>
+                <input type="checkbox" name="checkbox" id="checkbox2">
+                <label for="Checkbox">Python</label>
+                <input type="checkbox" name="checkbox" id="checkbox3">
+            </fieldset>
+            <p>Please select your age:</p>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">0 - 30</label><br>
+            <input type="radio" id="age2" name="age" value="60">
+            <label for="age2">31 - 60</label><br>
+            <input type="radio" id="age3" name="age" value="100">
+            <label for="age3">61 - 100</label><br><br>
+
+            <label for>Enter the message:</label><br><br>
+            <textarea name id cols="30" rows="10"
+                placeholder="Enter the message"></textarea> <br><br>
+
+            <img src="img/img1.avif" alt="img" style="height: 150px;"><br><br>
+
+            <label>Choose a file: </label>
+            <input type="file" name="file" id="file"><br><br>
+            <button style="border-radius: 50px;">Submit</button>
+
+        </form>
+    </body>
+
+</html>

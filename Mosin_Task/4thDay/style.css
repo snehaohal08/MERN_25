@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #001f3f, #0074D9);
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 32px;
+}
+
+.swiper {
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.student-card {
+  background: rgba(255, 255, 255, 0.15); /* glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 300px;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  color: #fff;
+}
+
+.student-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.student-card h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.student-card p {
+  font-size: 17px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.student-card p strong {
+  color: #f0faff;
+}
+
+.message-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.message-btn:hover {
+  background-color: #0057b7;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+  border: 3px solid #007bff;
+}
+
+/* Swiper controls */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-prev {
+  left: 2px; /* previously -50px */
+}
+
+.swiper-button-next {
+  right: 10px; /* previously -50px */
+}
+
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.1) translateY(-50%);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007bff;
+  opacity: 1;
+}

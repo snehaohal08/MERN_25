@@ -1,0 +1,31 @@
+/* External css */
+/* p{
+    background-color: rgb(0, 94, 255);
+}
+
+h1 {
+    color: green;
+} */
+
+#h1ele{
+    color: blue;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+.pele1{
+    color: red;
+    
+    background-color: aqua;
+}
+.h1ele2{
+    color: purple;
+}
+p,article{
+    width: 500px;
+    /* background-color: blueviolet; */
+}
+p.pele2{
+    text-align: center;
+    color: yellowgreen;
+}

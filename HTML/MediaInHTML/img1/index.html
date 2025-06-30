@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            height: 120px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        audio, video {
+            margin: 15px auto;
+            display: block;
+            max-width: 90%;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        iframe {
+            margin: 20px auto;
+            display: block;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <img src="s.jpg" alt="Sneha" loading="lazy">
+
+    <audio src="rainy-day-in-town-with-birds-singing-194011.mp3" controls></audio>
+
+    <video controls style="height: 200px;">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <iframe src="/HTML/Pro1/Task/index.html" width="500" height="500"></iframe>
+
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/-CChWdx_pF4"
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
