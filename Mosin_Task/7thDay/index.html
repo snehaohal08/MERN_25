@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>boox move in another container</title>
+        <style>
+            .container {
+      display: flex;        
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        background-color: #f0f0f0;
+        gap: 10px;
+        border: 1px solid black;
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    .container2{
+      display: flex;        
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        background-color: #f0f0f0;
+        gap: 10px;
+        border: 1px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+    .box {
+      width: 80px;
+      height: 80px;
+      background-color: blueviolet;
+      border-radius: 5px;
+      margin: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+
+        <div class="container2">
+
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
