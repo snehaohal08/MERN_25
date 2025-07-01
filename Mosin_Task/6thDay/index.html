@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Simple Box Addition</title>
+        <style>
+            .container {
+      display: flex;        
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        gap: 10px;
+    }
+    .box {
+      width: 80px;
+      height: 80px;
+      background-color: blueviolet;
+      border-radius: 5px;
+      margin: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
