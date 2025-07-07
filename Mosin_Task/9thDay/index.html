@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h2>Easy Table</h2>
+    <table id="myTable" border="1"></table>
+
+    <script>
+      const data = [
+        { name: "Sneha", age: 22, city: "Pune" },
+        { name: "Akshay", age: 25, city: "Mumbai" },
+        { name: "Priya", age: 20, city: "Nagpur" }
+      ];
+
+      const table = document.getElementById("myTable");
+
+      // Create header row
+      let header = table.insertRow();
+      Object.keys(data[0]).forEach(key => {
+        let cell = header.insertCell();
+        cell.innerHTML = `<b>${key.toUpperCase()}</b>`;
+      });
+
+      // Create data rows
+      data.forEach(obj => {
+        let row = table.insertRow();
+        Object.values(obj).forEach(val => {
+          let cell = row.insertCell();
+          cell.innerText = val;
+        });
+      });
+    </script>
+
+  </body>
+</html>
