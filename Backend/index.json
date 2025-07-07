@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Sneha Ohal",
+    "age": 21,
+    "email": "sneha@gmail.com",
+    "city": "Pune",
+    "company_Name": "RNT",
+    "phone_no": "1245789635"
+  },
+  {
+    "name": "Mosin balsing",
+    "age": 24,
+    "email": "mosin@gmail.com",
+    "city": "Mumbai",
+    "company_Name": "RNT",
+    "phone_no": "9876543210"
+  },
+  {
+    "name": "Akshata jadhav",
+    "age": 22,
+    "email": "akshu@gmail.com",
+    "city": "Nagpur",
+    "company_Name": "RNT",
+    "phone_no": "7894561230"
+  },
+  {
+    "name": "Rahul girmmaji",
+    "age": 26,
+    "email": "rahul@gmail.com",
+    "city": "Nashik",
+    "company_Name": "RNT",
+    "phone_no": "9632587410"
+  },
+  {
+    "name": "Neha Patil",
+    "age": 23,
+    "email": "neha23@gmail.com",
+    "city": "Pune",
+    "company_Name": "RNT",
+    "phone_no": "8527419630"
+  },
+  {
+    "name": "Sanket Pawar",
+    "age": 25,
+    "email": "sanket.p@gmail.com",
+    "city": "Kolhapur",
+    "company_Name": "RNT",
+    "phone_no": "9517534862"
+  },
+  {
+    "name": "Komal Shinde",
+    "age": 21,
+    "email": "komal.s@gmail.com",
+    "city": "Solapur",
+    "company_Name": "RNT",
+    "phone_no": "7418529630"
+  },
+  {
+    "name": "Aniket More",
+    "age": 27,
+    "email": "aniket.m@gmail.com",
+    "city": "Aurangabad",
+    "company_Name": "RNT",
+    "phone_no": "7531598426"
+  },
+  {
+    "name": "Snehal K",
+    "age": 20,
+    "email": "snehal.k@gmail.com",
+    "city": "Satara",
+    "company_Name": "RNT",
+    "phone_no": "8541237896"
+  },
+  {
+    "name": "Pratik Gaikwad",
+    "age": 24,
+    "email": "pratik.g@gmail.com",
+    "city": "Pune",
+    "company_Name": "RNT",
+    "phone_no": "7893216540"
+  },
+  {
+    "name": "Tanvi Joshi",
+    "age": 23,
+    "email": "tanvi.j@gmail.com",
+    "city": "Mumbai",
+    "company_Name": "RNT",
+    "phone_no": "9365824710"
+  },
+  {
+    "name": "Nikhil Salve",
+    "age": 22,
+    "email": "nikhil.s@gmail.com",
+    "city": "Ahmednagar",
+    "company_Name": "RNT",
+    "phone_no": "6987451203"
+  },
+  {
+    "name": "Rutuja G",
+    "age": 21,
+    "email": "rutuja.g@gmail.com",
+    "city": "Pune",
+    "company_Name": "RNT",
+    "phone_no": "9871234560"
+  },
+  {
+    "name": "Kiran Naik",
+    "age": 28,
+    "email": "kiran.n@gmail.com",
+    "city": "Thane",
+    "company_Name": "RNT",
+    "phone_no": "7412369850"
+  },
+  {
+    "name": "Vaibhav Kale",
+    "age": 26,
+    "email": "vaibhav.k@gmail.com",
+    "city": "Nanded",
+    "company_Name": "RNT",
+    "phone_no": "6958471203"
+  }
+]
