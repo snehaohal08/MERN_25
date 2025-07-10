@@ -1,0 +1,58 @@
+/* Form container styling (already done by you, just keeping) */
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs */
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Labels */
+.form-container label {
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Asterisk for required fields */
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+/* Submit button */
+.form-container button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}

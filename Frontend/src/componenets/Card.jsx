@@ -1,19 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../context/UserContext"; // ✅ import context
 import "./Card.css";
 
 export const Card = () => {
-  const [userData, setUserData] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:8000/user")
-      .then((res) => res.json())
-      .then((data) => setUserData(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+    // consumer ke andar consumer ko dalo
+  const userData = useContext(UserContext); // ✅ get data from context
 
   return (
     <div className="card-wrapper">
-      <h1 className="heading">User Cards</h1>
+      <h1 className="heading">User Cards = {userData.length}</h1>
       <div className="card-grid">
         {userData.map((user, index) => (
           <div className="card" key={index}>
