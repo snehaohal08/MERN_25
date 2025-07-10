@@ -1,19 +1,46 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react"; 
+
 import { UserDataContext } from "../../context/UserData";
 import { Table as MantineTable, Group, Title } from "@mantine/core";
 import { Link } from "react-router-dom";
 import "./Table.css";
 
 const Table = () => {
-  const { userData } = useContext(UserDataContext);
-  const handleedit = (id) => {
-    alert(window.confirm("Are you sure you want to edit this user?"));
+  const { userData, setUserData } = useContext(UserDataContext);
+  
+ const handleedit = (id) => {
+  const userToEdit = userData.find((user) => user.id === id);
 
-  };
+  if (userToEdit) {
+    const name = prompt("Enter new name:", userToEdit.name);
+    const email = prompt("Enter new email:", userToEdit.email);
+    const phone_no = prompt("Enter new phone no:", userToEdit.phone_no);
 
-  const handledelte=(id)=>{
-    alert(window.confirm("Are you sure you want to delete this user?"));
+    if (name && email && phone_no) {
+      const updatedUserData = userData.map((user) =>
+        user.id === id
+          ? { ...user, name: name, email: email, phone_no: phone_no }
+          : user
+      );
+      setUserData(updatedUserData);
+      alert("User edited successfully!");
+    } else {
+      alert("Edit cancelled or invalid input!");
+    }
   }
+};
+
+const handledelte = (id) => {
+  if (window.confirm("Are you sure you want to delete this user?")) {
+    const updatedUserData = userData.filter((user) => user.id !== id);
+    setUserData(updatedUserData);
+    alert("User deleted successfully!");
+  }
+};
+
+
+
+
   return (
     <div className="table-container">
       <Group justify="space-between">
