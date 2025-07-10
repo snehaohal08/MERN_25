@@ -7,28 +7,24 @@ import "./Table.css";
 
 const Table = () => {
   const { userData, setUserData } = useContext(UserDataContext);
-  
+
  const handleedit = (id) => {
   const userToEdit = userData.find((user) => user.id === id);
+  if (!userToEdit) return;
 
-  if (userToEdit) {
-    const name = prompt("Enter new name:", userToEdit.name);
-    const email = prompt("Enter new email:", userToEdit.email);
-    const phone_no = prompt("Enter new phone no:", userToEdit.phone_no);
+  const name = prompt("Enter new name", userToEdit.name);
+  const email = prompt("Enter new email", userToEdit.email);
+  const phone_no = prompt("Enter new phone", userToEdit.phone_no);
 
-    if (name && email && phone_no) {
-      const updatedUserData = userData.map((user) =>
-        user.id === id
-          ? { ...user, name: name, email: email, phone_no: phone_no }
-          : user
-      );
-      setUserData(updatedUserData);
-      alert("User edited successfully!");
-    } else {
-      alert("Edit cancelled or invalid input!");
-    }
+  if (name && email && phone_no) {
+    const updatedUserData = userData.map((user) =>
+      user.id === id ? { ...user, name, email, phone_no } : user
+    );
+    setUserData(updatedUserData);
+    alert("User updated successfully!");
   }
 };
+
 
 const handledelte = (id) => {
   if (window.confirm("Are you sure you want to delete this user?")) {
