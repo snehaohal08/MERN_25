@@ -1,31 +1,36 @@
-import { Card } from "./componenets/card";
-
-import {BrowserRouter,Routes,Route} from "react-router-dom"
-import User from "./componenets/User/user";
-import { Notifications } from "@mantine/notifications"; 
-import { UserCount } from "./componenets/userCount";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { MantineProvider } from "@mantine/core"; // ✅ Required for Mantine to work
+import { Notifications } from "@mantine/notifications";
 import { UserProvider } from "./context/UserData";
+import User from "./componenets/User/user";
 import Table from "./componenets/Table/Table";
+import { UserCount } from "./componenets/userCount";
+import { Card } from "./componenets/card";
 
 function App() {
   return (
-    <>
-  <div style={{ position: "relative", minBlockSize:"100vh" }}>
-    <Notifications position="top-right" zIndex={1000}/>
-    <BrowserRouter>
-    <UserProvider>
-      <Routes>
-        <Route path="/" element={<User/>}/>
-        <Route path="/usercount" element={<UserCount/>}/>
-        <Route path="/card" element={<Card/>}/>
-        <Route path="/table" element={<Table/>}/>
-      </Routes>
-    </UserProvider>
-    </BrowserRouter>
+    <MantineProvider
+      withGlobalStyles
+      withNormalizeCSS
+      theme={{
+        fontFamily: "Poppins, sans-serif",
+        primaryColor: "blue",
+      }}
+    >
+      <UserProvider>
+        <BrowserRouter>
+          {/* ✅ Notifications must go inside here */}
+          <Notifications position="bottom-left" />
 
-  </div>
- 
-    </>
+          <Routes>
+            <Route path="/" element={<User />} />
+            <Route path="/usercount" element={<UserCount />} />
+            <Route path="/card" element={<Card />} />
+            <Route path="/table" element={<Table />} />
+          </Routes>
+        </BrowserRouter>
+      </UserProvider>
+    </MantineProvider>
   );
 }
 

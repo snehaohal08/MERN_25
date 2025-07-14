@@ -1,8 +1,8 @@
 // Difference bet let,const,var
 // variable reateion sathi use hot
-// var = function and global scope ,it can be manipulate but not re dleclared
-// let = bolck scope hota he any where can not acess,re-declared not possible
-// const = constant hota he , redlaclaration nahi hota 
+// var = function and global scope ,It can be declared without initialization.,It can be updated and re-declared in the same scope.It can be declared without initialization.
+// let = bolck scope hota he , It can be updated but cannot be re-declared in the same scope.It can be declared without initialization.
+// const = constant hota he , It can neither be updated or re-declared in any scope.It cannot be declared without initialization. 
 
 // {
 //   let a = 10;
@@ -11,12 +11,16 @@
 // let a=10
 // a="sneha"
 // console.log(a);
+// if (true) {
+//     let age = 30; 
+//     console.log(age); 
+// }
+// console.log(age)
 
 // but in const are not allowed
 // const a=10
 //  a="sneha"  //error=Assignment to constant variable.
 // console.log(a);
-
 
 // const student ={
 //     id:"101",

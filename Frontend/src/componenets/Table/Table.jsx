@@ -42,7 +42,7 @@ const handledelte = (id) => {
       <Group justify="space-between">
         <Title order={2}>User List</Title>
         <Link to="/">
-          <button class="btn1">Add User</button>
+          <button className="btn1">Add User</button>
         </Link>
       </Group>
 
