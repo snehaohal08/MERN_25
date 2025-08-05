@@ -59,3 +59,21 @@
 //   { id: "5", name: "Rahul", "Mobile no": "9495784578", age: 25 },
 //   { id: "6", name: "Prajwal", "Mobile no": "9010457869", age: 26 },
 //   { id: "7", name: "Akshata", "Mobile no": "9230457869", age: 29 }
+
+// let i = 1;
+// while (i <= 5) {
+//   console.log(i);
+//   i++;
+// }
+
+// for (let i = 0; i <= 5; i++) {
+//   console.log(i);  // 0 to 4
+// }
+
+
+let i = 10;
+do {
+    console.log("Hello Sneha!");
+    i++;
+} while (i <=15);
+
