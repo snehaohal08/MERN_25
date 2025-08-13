@@ -1,13 +1,16 @@
-// const fs = require('fs')
-// // fs.writeFileSync('example.txt',"This is an example file created using Node.js fs module.")
-// // console.log("file created");
+const fs = require('fs')
+fs.writeFile('example1.txt', 'This is an example file created using Node.js fs module.', (err) => {
+  if (err) {
+    console.error("Error writing file:", err);
+    return;
+  }
+  console.log("File written successfully!");
+});
 
-// const data = fs.readFileSync('example.txt', 'utf8');
-// console.log("Content : ",data);
-
-
-//**********************************************************Assingment Q4***************************************************************
-
- const express = require('express');
- const app= express();
- 
+fs.readFile('example1.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error("Error reading file:", err);
+    return;
+  }
+  console.log("File content:", data);
+});
