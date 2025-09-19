@@ -47,9 +47,13 @@
 // server.js
 import express from "express";
 import mongoose from "mongoose";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
+
+// ✅ Allow React frontend to access backend
+app.use(cors({ origin: "http://localhost:5173" }));
 
 // Step 1: Connect to MongoDB
 await mongoose.connect("mongodb://localhost:27017/MARS");
@@ -67,7 +71,7 @@ const userSchema = new mongoose.Schema({
 const Users = mongoose.model("User", userSchema);
 
 // Step 4: API to fetch data
-app.get("/users", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const users = await Users.find(); // Fetch from MongoDB
     res.json(users); // Send as JSON

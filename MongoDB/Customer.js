@@ -8,7 +8,7 @@ db.Customer.aggregate([{$match:{rating:{$lt:3}}},{$project:{cid:1}}])
 //  Display records from location pune 
 db.Customer.find({"location":"Pune"})
 
-// Display first five records 
+// Display first five records   
 db.Customer.find().limit(5)
 
 //  display no of customer from Mumbai location

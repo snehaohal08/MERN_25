@@ -1,0 +1,134 @@
+But we don't use it much
+Sorry, sir, I know a little bit about
+“I’m sorry, could you please repeat the question?”
+
+
+
+split()
+
+Use: Converts a string into an array, splitting it by a separator.
+
+Syntax:string.split(separator, limit);
+
+join()
+
+Use: Converts an array into a string, joining with a separator.
+	array.join(separator);
+
+Reverse the string "hello" : "olleh"
+const str = "hello";
+
+// 1. split into array of letters
+// 2. reverse the array
+// 3. join back to a string
+const reversed = str.split("").reverse().join("");
+
+console.log(reversed);
+// Output: "olleh"
+*********************************************************************************************************************************
+
+slice : in slice() method create a new array but the prevevious array can not be changed (copies created of an aary into a new aaray)
+
+splice : in splice method we can remove the elemet 
+	const fruits = ["apple", "banana", "mango", "orange"];
+	const removed = fruits.splice(1, 2, "grapes", "kiwi");
+	console.log(removed);  // ["banana", "mango"]
+	console.log(fruits);   // ["apple", "grapes", "kiwi", "orange"]
+
+
+
+
+1️⃣ Inline Elements
+
+Definition:
+Elements that do not start on a new line and only take as much width as their content.
+
+Characteristics:
+
+Can contain text or other inline elements.
+
+width and height do not apply.
+
+Examples: <span>, <a>, <strong>, <img>
+
+Example:
+
+<span style="color: red;">Red</span>
+<span>Text</span>
+
+
+Both spans appear in the same line.
+
+2️⃣ Block Elements
+
+Definition:
+Elements that start on a new line and take full width of the parent container by default.
+
+Characteristics:
+
+Can contain inline and block elements.
+
+width and height can be set.
+
+Examples: <div>, <p>, <h1>–<h6>, <section>
+
+Example:
+
+<div style="background: lightblue; height: 50px;">Block 1</div>
+<div>Block 2</div>
+
+
+Each <div> appears on a separate line.
+
+3️⃣ Inline-Block Elements
+
+Definition:
+Elements that behave like inline elements (stay in line) but allow setting width and height like block elements.
+
+Characteristics:
+
+Can be in a line with other elements.
+
+width and height can be set.
+
+Examples: <img>, <button> (by default), or any element with display:inline-block.
+
+Example:
+
+<span style="display:inline-block; width:100px; height:50px; background:yellow;">Box</span>
+<span style="display:inline-block; width:100px; height:50px; background:orange;">Box</span>
+
+
+Both boxes appear on the same line but have defined width and height.
+
+Quick Comparison Table
+Property	Inline	Block	Inline-Block
+Starts on new line?	❌ No	✅ Yes	❌ No
+Width & Height	❌ No	✅ Yes	✅ Yes
+Examples	<span>, <a>	<div>, <p>	<img>, <button>
+******************************************************************************************************************************************
+virtual DOM 
+A lightweight in-memory representation of the real DOM.
+When state changes, React diffs the new Virtual DOM with the previous one and updates only the changed parts of the real DOM → faster rendering.
+
+*****************************************************************************************************************************************
+
+function countChar(str, char) {
+  let count = 0; // initialize counter
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === char) {
+      count++; // increment if character matches
+    }
+  }
+
+  return count;
+}
+
+// Example usage:
+console.log(countChar("banana", "a")); // 3
+console.log(countChar("apple", "p"));  // 2
+console.log(countChar("hello", "z"));  // 0
+
+
+
